@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service & EULA - AstroScope</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0B0A14;
+      --surface: #141026;
+      --surface-elevated: #1F173B;
+      --border: rgba(212, 175, 55, 0.25);
+      --gold: #F3C669;
+      --gold-light: #FDE8B5;
+      --text-primary: #F5F3FF;
+      --text-secondary: #B4AEC7;
+      --text-muted: #7E7896;
+      --accent-glow: rgba(243, 198, 105, 0.15);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-primary);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 48px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6), 0 0 30px var(--accent-glow);
+    }
+
+    @media (max-width: 640px) {
+      body { padding: 16px 12px; }
+      .container { padding: 24px 18px; border-radius: 14px; }
+    }
+
+    .lang-banner {
+      background: var(--surface-elevated);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px 20px;
+      margin-bottom: 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 13px;
+    }
+
+    .lang-banner-info {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text-secondary);
+    }
+
+    .lang-banner-links {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .lang-banner-links a {
+      color: var(--gold);
+      text-decoration: none;
+      padding: 5px 14px;
+      border-radius: 6px;
+      background: rgba(243, 198, 105, 0.12);
+      border: 1px solid rgba(243, 198, 105, 0.3);
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+
+    .lang-banner-links a:hover {
+      background: rgba(243, 198, 105, 0.25);
+      border-color: var(--gold);
+    }
+
+    .lang-banner-links .current {
+      color: var(--gold-light);
+      font-weight: 600;
+      padding: 4px 8px;
+    }
+
+    .brand-header {
+      text-align: center;
+      margin-bottom: 36px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 28px;
+    }
+
+    .brand-title {
+      font-family: 'Cinzel', serif;
+      font-size: 32px;
+      color: var(--gold-light);
+      letter-spacing: 2px;
+      margin-bottom: 6px;
+    }
+
+    .page-title {
+      font-family: 'Cinzel', serif;
+      font-size: 20px;
+      color: var(--gold);
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+
+    .date-badge {
+      display: inline-block;
+      font-size: 12px;
+      color: var(--text-muted);
+      background: var(--surface-elevated);
+      border: 1px solid var(--border);
+      padding: 4px 12px;
+      border-radius: 999px;
+    }
+
+    h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 18px;
+      color: var(--gold-light);
+      margin-top: 32px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2::before {
+      content: '✧';
+      color: var(--gold);
+      font-size: 14px;
+    }
+
+    p {
+      color: var(--text-secondary);
+      font-size: 14.5px;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-bottom: 18px;
+    }
+
+    li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 10px;
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+
+    li::before {
+      content: '•';
+      position: absolute;
+      left: 8px;
+      color: var(--gold);
+      font-weight: bold;
+    }
+
+    .disclaimer-card {
+      background: var(--surface-elevated);
+      border-left: 3px solid #E57373;
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin: 18px 0;
+    }
+
+    .disclaimer-card p {
+      margin: 0;
+      color: var(--text-primary);
+      font-size: 14px;
+    }
+
+    .footer-nav {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    a {
+      color: var(--gold);
+      text-decoration: underline;
+      transition: opacity 0.2s ease;
+    }
+
+    a:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="lang-banner">
+      <div class="lang-banner-info">
+        <span>🌐 Language: <strong>English (Default)</strong></span>
+      </div>
+      <div class="lang-banner-links">
+        <span class="current">EN</span>
+        <span style="color: var(--text-muted);">|</span>
+        <a href="terms_fr.html">Passer en Français 🇫🇷</a>
+      </div>
+    </div>
+
+    <header class="brand-header">
+      <div class="brand-title">ASTROSCOPE</div>
+      <h1 class="page-title">Terms of Service & EULA</h1>
+      <span class="date-badge">Last updated: September 6, 2026</span>
+    </header>
+
+    <section>
+      <p>
+        These Terms of Service (“Terms”) and End User License Agreement (“EULA”) govern your access to and use of the <strong>AstroScope</strong> mobile application.
+      </p>
+      <p>
+        By downloading, installing, accessing, or using AstroScope, you acknowledge that you have read, understood, and unconditionally agree to be bound by these Terms. If you do not agree to these terms, do not install, access, or use the application.
+      </p>
+
+      <h2>1. Legal Disclaimer: Entertainment & Spiritual Guidance Only</h2>
+      <div class="disclaimer-card">
+        <p><strong>Important Notice (Entertainment & Spiritual Guidance Only):</strong> Astrological interpretations, natal charts, real-time planetary transits, and AI-generated syntheses provided by AstroScope are intended strictly for entertainment, personal reflection, and cultural exploration. They do not constitute and must never be considered medical, psychological, legal, financial, or professional advice. For critical decisions regarding health, legal matters, or financial investments, you must always consult a duly qualified and licensed professional.</p>
+      </div>
+
+      <h2>2. License Grant</h2>
+      <p>
+        AstroScope grants you a personal, revocable, non-exclusive, non-transferable, and limited license to download, install, and use the application strictly for personal, non-commercial purposes on compatible devices that you own or lawfully control.
+      </p>
+
+      <h2>3. Premium Subscriptions, Free Trial & Auto-Renewal</h2>
+      <p>
+        AstroScope provides a free basic experience as well as an optional auto-renewable subscription (“AstroScope Premium”) unlocking unlimited AI Oracle guidance, complete Placidus charts, and real-time transit tracking:
+      </p>
+      <ul>
+        <li><strong>App Store Billing:</strong> Subscription payments are charged directly to your Google Play Store or Apple ID account and managed through the secure RevenueCat platform.</li>
+        <li><strong>Free Trial:</strong> When a 3-day free trial is offered, the subscription automatically transitions into a paid annual subscription at the stated rate upon expiration of the 3 days, unless canceled prior to the end of the trial period.</li>
+        <li><strong>Automatic Renewal:</strong> Subscriptions automatically renew at the end of each billing cycle (monthly or annually) at the same price unless auto-renew is turned off at least 24 hours before the end of the current billing period.</li>
+        <li><strong>Management & Cancellation:</strong> You can manage and cancel your subscriptions at any time directly through your account settings on Google Play Store (under <em>Payments & subscriptions</em>) or Apple ID (under <em>Subscriptions</em>). Cancellation takes effect at the conclusion of the active billing term.</li>
+        <li><strong>Restore Purchases:</strong> The application includes a “Restore Purchases” button enabling you to instantly restore your subscription entitlements on any new or reset device associated with the same store account.</li>
+      </ul>
+
+      <h2>4. Service Availability & AI Systems</h2>
+      <p>
+        While we make every effort to maintain continuous availability and optimal performance of our astrological calculation engines, temporary service interruptions may occur (such as maintenance, network latency, or LLM inference downtime). AstroScope is not liable for temporary service interruptions or performance degradations.
+      </p>
+
+      <h2>5. Intellectual Property</h2>
+      <p>
+        All intellectual property rights in and to AstroScope—including its design, visual identity, texts, artwork, logos, icons, animations, and proprietary astrological integration algorithms—are the exclusive property of its creators and protected under international copyright and intellectual property laws. Unauthorized copying, modification, reverse-engineering, decompilation, or redistribution is strictly prohibited.
+      </p>
+
+      <h2>6. Limitation of Liability</h2>
+      <p>
+        To the maximum extent permitted by applicable law, AstroScope, its developers, and affiliates shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising from the use of, or inability to use, the application, or any decisions made in reliance upon astrological readings or AI-generated guidance.
+      </p>
+
+      <h2>7. Governing Law & Updates</h2>
+      <p>
+        These Terms are governed by and construed in accordance with the laws applicable in your jurisdiction of residence. We reserve the right to modify these Terms at any time to reflect changes in our service offerings or applicable legal requirements.
+      </p>
+
+      <h2>8. Contact</h2>
+      <p>
+        For support, questions, or legal inquiries regarding AstroScope, please contact our team at: <a href="mailto:support@aietec.org">support@aietec.org</a>.
+      </p>
+    </section>
+
+    <footer class="footer-nav">
+      <span>© 2026 AstroScope — All rights reserved.</span>
+      <div>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

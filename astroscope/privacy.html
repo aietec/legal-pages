@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - AstroScope</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0B0A14;
+      --surface: #141026;
+      --surface-elevated: #1F173B;
+      --border: rgba(212, 175, 55, 0.25);
+      --gold: #F3C669;
+      --gold-light: #FDE8B5;
+      --text-primary: #F5F3FF;
+      --text-secondary: #B4AEC7;
+      --text-muted: #7E7896;
+      --accent-glow: rgba(243, 198, 105, 0.15);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-primary);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 48px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6), 0 0 30px var(--accent-glow);
+    }
+
+    @media (max-width: 640px) {
+      body { padding: 16px 12px; }
+      .container { padding: 24px 18px; border-radius: 14px; }
+    }
+
+    .lang-banner {
+      background: var(--surface-elevated);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px 20px;
+      margin-bottom: 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 13px;
+    }
+
+    .lang-banner-info {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text-secondary);
+    }
+
+    .lang-banner-links {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .lang-banner-links a {
+      color: var(--gold);
+      text-decoration: none;
+      padding: 5px 14px;
+      border-radius: 6px;
+      background: rgba(243, 198, 105, 0.12);
+      border: 1px solid rgba(243, 198, 105, 0.3);
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+
+    .lang-banner-links a:hover {
+      background: rgba(243, 198, 105, 0.25);
+      border-color: var(--gold);
+    }
+
+    .lang-banner-links .current {
+      color: var(--gold-light);
+      font-weight: 600;
+      padding: 4px 8px;
+    }
+
+    .brand-header {
+      text-align: center;
+      margin-bottom: 36px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 28px;
+    }
+
+    .brand-title {
+      font-family: 'Cinzel', serif;
+      font-size: 32px;
+      color: var(--gold-light);
+      letter-spacing: 2px;
+      margin-bottom: 6px;
+    }
+
+    .page-title {
+      font-family: 'Cinzel', serif;
+      font-size: 20px;
+      color: var(--gold);
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+
+    .date-badge {
+      display: inline-block;
+      font-size: 12px;
+      color: var(--text-muted);
+      background: var(--surface-elevated);
+      border: 1px solid var(--border);
+      padding: 4px 12px;
+      border-radius: 999px;
+    }
+
+    h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 18px;
+      color: var(--gold-light);
+      margin-top: 32px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2::before {
+      content: '✧';
+      color: var(--gold);
+      font-size: 14px;
+    }
+
+    p {
+      color: var(--text-secondary);
+      font-size: 14.5px;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-bottom: 18px;
+    }
+
+    li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 10px;
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+
+    li::before {
+      content: '•';
+      position: absolute;
+      left: 8px;
+      color: var(--gold);
+      font-weight: bold;
+    }
+
+    .highlight-card {
+      background: var(--surface-elevated);
+      border-left: 3px solid var(--gold);
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin: 18px 0;
+    }
+
+    .highlight-card p {
+      margin: 0;
+      color: var(--text-primary);
+      font-size: 14px;
+    }
+
+    .footer-nav {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    a {
+      color: var(--gold);
+      text-decoration: underline;
+      transition: opacity 0.2s ease;
+    }
+
+    a:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="lang-banner">
+      <div class="lang-banner-info">
+        <span>🌐 Language: <strong>English (Default)</strong></span>
+      </div>
+      <div class="lang-banner-links">
+        <span class="current">EN</span>
+        <span style="color: var(--text-muted);">|</span>
+        <a href="privacy_fr.html">Passer en Français 🇫🇷</a>
+      </div>
+    </div>
+
+    <header class="brand-header">
+      <div class="brand-title">ASTROSCOPE</div>
+      <h1 class="page-title">Privacy Policy</h1>
+      <span class="date-badge">Last updated: September 6, 2026</span>
+    </header>
+
+    <section>
+      <p>
+        This Privacy Policy describes how <strong>AstroScope</strong> (“we”, “our”, or “the application”) collects, uses, protects, and deletes personal information from its users. We are committed to absolute transparency and strict compliance with applicable data privacy regulations, including the General Data Protection Regulation (GDPR).
+      </p>
+
+      <h2>1. Data Collected and Purposes</h2>
+      <p>AstroScope only collects data that is strictly essential to the operation of its astrological features:</p>
+      <ul>
+        <li><strong>Identity / Pseudonym:</strong> A chosen name or nickname (defaulting to “Astral Traveler”) used solely to personalize the display of your cosmic charts.</li>
+        <li><strong>Birth Details (Date, Exact Time, City, and GPS Coordinates):</strong> Strictly required for the precise mathematical calculation of your Placidus natal chart using high-precision ephemeris algorithms (Swiss Ephemeris / Moshier) and for calculating real-time planetary transits.</li>
+        <li><strong>Purchase and Subscription Data:</strong> Securely processed by Google Play Store / Apple App Store and RevenueCat. We never have access to your bank details or credit card numbers.</li>
+      </ul>
+
+      <h2>2. Artificial Intelligence Processing & Privacy Safeguards</h2>
+      <div class="highlight-card">
+        <p><strong>Anonymization & Zero Retraining Commitment:</strong> Prompts and transit calculations sent to Large Language Models (LLMs) for generating daily interpretations and personalized horoscopes are strictly anonymized. Your identity and personal records are never transferred to advertising networks, never stored by third parties, and never used to train or fine-tune artificial intelligence models.</p>
+      </div>
+
+      <h2>3. Local Storage and Encryption</h2>
+      <p>
+        Your birth profile and settings are stored locally on your device in a sandboxed, secure environment provided by standard Android and iOS operating system security frameworks. All communications between AstroScope and calculation backend servers are encrypted end-to-end using standard HTTPS / TLS protocols.
+      </p>
+
+      <h2>4. No Third-Party Sharing or Advertising Trackers</h2>
+      <p>
+        AstroScope is designed with complete respect for the celestial serenity of its users:
+      </p>
+      <ul>
+        <li>No advertising SDKs or third-party marketing trackers (no intrusive ads).</li>
+        <li>No resale, trade, or transfer of your geographic coordinates or temporal birth data to third parties.</li>
+      </ul>
+
+      <h2>5. Right to Erasure & Immediate Data Deletion</h2>
+      <p>
+        Under applicable personal data protection laws, you retain full rights to access, rectify, and erase your information:
+      </p>
+      <ul>
+        <li><strong>In-App Modification / Reset:</strong> You can modify or overwrite your natal profile at any time directly from the “My Profile” screen within the app.</li>
+        <li><strong>Complete Deletion:</strong> Uninstalling the application or clearing the local app storage via your device settings immediately and permanently deletes all stored data.</li>
+      </ul>
+
+      <h2>6. Contact & Data Protection Officer</h2>
+      <p>
+        For any questions or requests regarding your personal data, you may reach our privacy team directly at: <a href="mailto:support@aietec.org">support@aietec.org</a>.
+      </p>
+    </section>
+
+    <footer class="footer-nav">
+      <span>© 2026 AstroScope — All rights reserved.</span>
+      <div>
+        <a href="terms.html">Terms of Service (CGU / EULA)</a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
