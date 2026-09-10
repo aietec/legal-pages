@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://aietec.github.io/legal-pages/magnivio/sitemap.xml
