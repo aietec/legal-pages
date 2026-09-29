@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account & Data Deletion - CRT Pong - 1972 Retro Arcade</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --card-bg: #12131c;
+      --card-elevated: #1a1c28;
+      --border: #2a2d3d;
+      --border-accent: rgba(255, 85, 85, 0.3);
+      --text-primary: #e6e8ee;
+      --text-secondary: #9ea3b5;
+      --text-muted: #656a7d;
+      --accent: #00ff88;
+      --accent-glow: rgba(0, 255, 136, 0.15);
+      --accent-danger: #ff5555;
+      --accent-danger-glow: rgba(255, 85, 85, 0.15);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-primary);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.7;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 48px 40px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6), 0 0 25px var(--accent-glow);
+    }
+
+    @media (max-width: 640px) {
+      body { padding: 16px 12px; }
+      .container { padding: 28px 20px; border-radius: 12px; }
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 36px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .app-title {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 1.1rem;
+      color: var(--accent);
+      text-shadow: 0 0 10px var(--accent-glow);
+      margin-bottom: 16px;
+      line-height: 1.4;
+      letter-spacing: 1px;
+    }
+
+    .page-title {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+    }
+
+    .meta-badge {
+      display: inline-block;
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      background: var(--card-elevated);
+      border: 1px solid var(--border);
+      padding: 4px 14px;
+      border-radius: 999px;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-top: 32px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2::before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background-color: var(--accent-danger);
+      border-radius: 2px;
+      box-shadow: 0 0 6px var(--accent-danger);
+    }
+
+    p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-bottom: 18px;
+    }
+
+    li {
+      position: relative;
+      padding-left: 22px;
+      margin-bottom: 10px;
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+
+    li::before {
+      content: '>';
+      position: absolute;
+      left: 4px;
+      color: var(--accent-danger);
+      font-family: monospace;
+      font-weight: bold;
+    }
+
+    .step-card {
+      background: var(--card-elevated);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      padding: 20px;
+      border-radius: 8px;
+      margin: 16px 0;
+    }
+
+    .step-card.email-card {
+      border-left-color: var(--accent-danger);
+    }
+
+    .email-box {
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px dashed var(--border-accent);
+      padding: 16px;
+      border-radius: 8px;
+      margin: 14px 0;
+      font-family: monospace;
+      font-size: 0.9rem;
+      color: var(--text-primary);
+    }
+
+    .email-box a {
+      color: var(--accent-danger);
+      text-decoration: underline;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: #00e5ff;
+      text-decoration: underline;
+    }
+
+    .footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .back-btn {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .back-btn:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--text-primary);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="app-title">CRT PONG - 1972 RETRO ARCADE</div>
+      <h1 class="page-title">Account & Data Deletion</h1>
+      <span class="meta-badge">Google Play Compliance & Privacy Protection</span>
+    </header>
+
+    <main>
+      <p>
+        In compliance with Google Play Developer Policies and global privacy regulations, users of <strong>CRT Pong - 1972 Retro Arcade</strong> ("the Application"), published by <strong>AieTec</strong>, can request the complete deletion of their account and associated data.
+      </p>
+
+      <h2>Deletion Procedure</h2>
+      <p>Follow these steps to unlink or permanently delete your account data:</p>
+
+      <div class="step-card">
+        <p><strong>Step 1: In-App Sign Out or Unlink</strong></p>
+        <p>
+          Users can unlink their Google account or sign out directly within the application settings at any time.
+        </p>
+      </div>
+
+      <div class="step-card email-card">
+        <p><strong>Step 2: Request Permanent Data Deletion</strong></p>
+        <p>
+          To request permanent deletion of your account data, Firebase profile, leaderboard scores, and matchmaking history, simply send an email request to our support address:
+        </p>
+
+        <div class="email-box">
+          <strong>To:</strong> <a href="mailto:contact@aietec.net">contact@aietec.net</a><br>
+          <strong>Subject:</strong> Delete Account - CRT Pong<br>
+          <strong>Details Required:</strong> Specify your Google account email or in-game User ID.
+        </div>
+      </div>
+
+      <h2>Processing Timeline & Data Affected</h2>
+      <ul>
+        <li><strong>Timeline:</strong> Account deletion requests are processed within <strong>30 days</strong>.</li>
+        <li><strong>Data Deleted:</strong> Your Firebase profile, registered email address, global leaderboard scores, ELO rating, and matchmaking history will be permanently erased.</li>
+      </ul>
+
+      <h2>Contact Support</h2>
+      <p>
+        If you have any questions regarding your account or data deletion request, please reach out to us at <a href="mailto:contact@aietec.net">contact@aietec.net</a>.
+      </p>
+    </main>
+
+    <footer class="footer">
+      <span>&copy; AieTec. CRT Pong - 1972 Retro Arcade. All rights reserved.</span>
+      <div>
+        <a href="privacy.html" class="back-btn">&larr; Back to Privacy Policy</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - CRT Pong - 1972 Retro Arcade</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --card-bg: #12131c;
+      --card-elevated: #1a1c28;
+      --border: #2a2d3d;
+      --border-accent: rgba(0, 255, 136, 0.3);
+      --text-primary: #e6e8ee;
+      --text-secondary: #9ea3b5;
+      --text-muted: #656a7d;
+      --accent: #00ff88;
+      --accent-glow: rgba(0, 255, 136, 0.15);
+      --accent-secondary: #00e5ff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-primary);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.7;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 48px 40px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6), 0 0 25px var(--accent-glow);
+    }
+
+    @media (max-width: 640px) {
+      body { padding: 16px 12px; }
+      .container { padding: 28px 20px; border-radius: 12px; }
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 36px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .app-title {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 1.1rem;
+      color: var(--accent);
+      text-shadow: 0 0 10px var(--accent-glow);
+      margin-bottom: 16px;
+      line-height: 1.4;
+      letter-spacing: 1px;
+    }
+
+    .page-title {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+    }
+
+    .meta-badge {
+      display: inline-block;
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      background: var(--card-elevated);
+      border: 1px solid var(--border);
+      padding: 4px 14px;
+      border-radius: 999px;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-top: 32px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2::before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background-color: var(--accent);
+      border-radius: 2px;
+      box-shadow: 0 0 6px var(--accent);
+    }
+
+    p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-bottom: 18px;
+    }
+
+    li {
+      position: relative;
+      padding-left: 22px;
+      margin-bottom: 10px;
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+
+    li::before {
+      content: '>';
+      position: absolute;
+      left: 4px;
+      color: var(--accent);
+      font-family: monospace;
+      font-weight: bold;
+    }
+
+    .card {
+      background: var(--card-elevated);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      padding: 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+
+    .card p {
+      margin-bottom: 8px;
+    }
+
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: var(--accent-secondary);
+      text-decoration: underline;
+    }
+
+    .footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .action-btn {
+      display: inline-block;
+      background: rgba(0, 255, 136, 0.1);
+      border: 1px solid var(--border-accent);
+      color: var(--accent);
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .action-btn:hover {
+      background: rgba(0, 255, 136, 0.2);
+      box-shadow: 0 0 12px var(--accent-glow);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="app-title">CRT PONG - 1972 RETRO ARCADE</div>
+      <h1 class="page-title">Privacy Policy</h1>
+      <span class="meta-badge">Publisher: AieTec &bull; Contact: contact@aietec.net</span>
+    </header>
+
+    <main>
+      <p>
+        This Privacy Policy explains how <strong>AieTec</strong> ("we", "our", or "us") handles, collects, uses, and protects your information when you play <strong>CRT Pong - 1972 Retro Arcade</strong> ("the Application"). We respect your privacy and are committed to protecting user personal data in compliance with international privacy laws, including the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA).
+      </p>
+
+      <h2>1. Publisher Information</h2>
+      <p>
+        <strong>Publisher:</strong> AieTec<br>
+        <strong>Contact Email:</strong> <a href="mailto:contact@aietec.net">contact@aietec.net</a><br>
+        If you have any questions or concerns regarding this Privacy Policy or data processing, please contact us at the email above.
+      </p>
+
+      <h2>2. Information We Collect</h2>
+      <p>To provide multiplayer arcade gameplay, global leaderboards, ad-supported access, and optional purchases, the Application collects the following categories of data:</p>
+
+      <ul>
+        <li>
+          <strong>Authentication (Google Sign-In via Firebase Authentication):</strong>
+          When you log in, we collect your Firebase unique User ID (UID), public display name, and technical email address provided by Google Sign-In. <em>No password storage is performed.</em>
+        </li>
+        <li>
+          <strong>Gameplay Data:</strong>
+          Global leaderboard scores, ELO rating, matchmaking metadata, and match history associated with your account.
+        </li>
+        <li>
+          <strong>Monetization & Ads (Google AdMob):</strong>
+          The Application integrates Google AdMob to display advertisements. AdMob collects device identifiers, mobile advertising IDs, and technical specifications for ad delivery and analytics. We utilize Google's User Messaging Platform (UMP) consent management framework to collect and manage user consent preferences for GDPR and CCPA compliance.
+        </li>
+        <li>
+          <strong>Purchases (Google Play Billing):</strong>
+          Purchase tokens and transaction identifiers issued by Google Play Billing when unlocking in-app content or VIP status. Payments are securely processed by Google Play.
+        </li>
+      </ul>
+
+      <h2>3. Data Usage & Real-Time Services</h2>
+      <p>Collected data is used strictly for core application functionality and services:</p>
+      <ul>
+        <li><strong>WebRTC Peer Connection Setup:</strong> Signaling metadata exchanged during matchmaking to establish peer-to-peer real-time multiplayer connections.</li>
+        <li><strong>Matchmaking Lobbies & Leaderboards:</strong> Matchmaking lobby management, calculating global ELO ratings, and ranking top scores on global leaderboards.</li>
+        <li><strong>Support & Receipt Verification:</strong> Validating in-app purchases and providing technical assistance upon user request.</li>
+      </ul>
+
+      <h2>4. Data Security & Retention</h2>
+      <p>
+        All data transmitted between the Application and our cloud services is encrypted in transit using industry-standard HTTPS/TLS protocols. User profiles, gameplay metadata, and leaderboard scores are stored securely within Google Firebase infrastructure equipped with robust security rules and administrative controls.
+      </p>
+
+      <h2>5. User Rights (GDPR & CCPA)</h2>
+      <p>Under GDPR, CCPA, and applicable data privacy regulations, you have the following rights regarding your personal data:</p>
+      <ul>
+        <li><strong>Right to Access:</strong> Right to request details and a copy of the personal data processed.</li>
+        <li><strong>Right to Rectify:</strong> Right to correct inaccurate or incomplete profile data.</li>
+        <li><strong>Right to Delete:</strong> Right to request permanent deletion of your account and associated data.</li>
+      </ul>
+
+      <div class="card">
+        <p><strong>Account & Data Deletion Procedure</strong></p>
+        <p>
+          You can request permanent deletion of your Firebase profile, global leaderboard scores, and matchmaking records at any time.
+        </p>
+        <p style="margin-top: 12px;">
+          <a href="delete-account.html" class="action-btn">View Account Deletion Instructions &rarr;</a>
+        </p>
+      </div>
+
+      <h2>6. Changes to This Privacy Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. Any changes will be posted directly on this page with an updated revision date.
+      </p>
+
+      <h2>7. Contact Us</h2>
+      <p>
+        If you have any questions or privacy inquiries, please contact AieTec at: <a href="mailto:contact@aietec.net">contact@aietec.net</a>.
+      </p>
+    </main>
+
+    <footer class="footer">
+      <span>&copy; AieTec. CRT Pong - 1972 Retro Arcade. All rights reserved.</span>
+      <div>
+        <a href="delete-account.html">Account & Data Deletion</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
