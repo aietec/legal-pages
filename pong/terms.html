@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service - CRT Pong - 1972 Retro Arcade</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --card-bg: #12131c;
+      --card-elevated: #1a1c28;
+      --border: #2a2d3d;
+      --border-accent: rgba(0, 255, 136, 0.3);
+      --text-primary: #e6e8ee;
+      --text-secondary: #9ea3b5;
+      --text-muted: #656a7d;
+      --accent: #00ff88;
+      --accent-glow: rgba(0, 255, 136, 0.15);
+      --accent-secondary: #00e5ff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-primary);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.7;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 48px 40px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6), 0 0 25px var(--accent-glow);
+    }
+
+    @media (max-width: 640px) {
+      body { padding: 16px 12px; }
+      .container { padding: 28px 20px; border-radius: 12px; }
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 36px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .app-title {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 1.1rem;
+      color: var(--accent);
+      text-shadow: 0 0 10px var(--accent-glow);
+      margin-bottom: 16px;
+      line-height: 1.4;
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      font-size: 1.85rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+
+    .meta {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-top: 32px;
+      margin-bottom: 14px;
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    h2::before {
+      content: "■";
+      font-family: 'Press Start 2P', monospace;
+      font-size: 0.75rem;
+      color: var(--accent);
+    }
+
+    p {
+      margin-bottom: 16px;
+      color: var(--text-secondary);
+    }
+
+    strong {
+      color: var(--text-primary);
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 20px;
+      color: var(--text-secondary);
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: var(--accent-secondary);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    .card {
+      background-color: var(--card-elevated);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 14px;
+    }
+
+    .nav-btn {
+      display: inline-block;
+      font-size: 0.85rem;
+      padding: 6px 14px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--card-elevated);
+      color: var(--text-primary);
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .nav-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="app-title">CRT PONG</div>
+      <h1>Terms of Service</h1>
+      <div class="meta">Effective Date: October 7, 2026 &bull; Published by AieTec</div>
+      <div class="nav-links">
+        <a href="privacy.html" class="nav-btn">Privacy Policy</a>
+        <a href="terms.html" class="nav-btn" style="border-color: var(--accent); color: var(--accent);">Terms of Service</a>
+        <a href="delete-account.html" class="nav-btn">Delete Account</a>
+      </div>
+    </header>
+
+    <main>
+      <p>
+        Welcome to <strong>CRT Pong - 1972 Retro Arcade</strong> ("the Application"), developed and operated by <strong>AieTec</strong> ("we", "us", or "our"). By downloading, installing, accessing, or playing CRT Pong, you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use the Application.
+      </p>
+
+      <h2>1. License to Use</h2>
+      <p>
+        Subject to your compliance with these Terms, AieTec grants you a non-exclusive, non-transferable, revocable, and limited license to download, install, and play the Application on compatible mobile or desktop devices solely for your personal, non-commercial entertainment.
+      </p>
+
+      <h2>2. User Accounts & Fair Play</h2>
+      <p>
+        You may access parts of the Application as a guest or sign in using a Google account to unlock cloud rankings and cross-device sync. You agree to:
+      </p>
+      <ul>
+        <li><strong>Appropriate Usernames:</strong> Choose user and display names that are non-offensive, respectful, and free from hate speech, harassment, impersonation, or trademark infringements.</li>
+        <li><strong>Fair Play & Integrity:</strong> Refrain from cheating, exploiting bugs, using automated bots, memory editors, or modified APKs/clients that alter ball trajectory, paddle dimensions, or game timing.</li>
+        <li><strong>Multiplayer Etiquette:</strong> Avoid intentional matchmaking manipulation (win trading, disconnect abuse, or stalling games).</li>
+      </ul>
+      <p>
+        We reserve the right to reset global ELO ratings, modify usernames, or suspend accounts violating these standards without prior notice.
+      </p>
+
+      <h2>3. In-App Purchases & Virtual Goods</h2>
+      <p>
+        The Application offers optional digital items, including the <em>Remove Ads (VIP)</em> upgrade, the <em>Retro Pack Vol. 1</em> (CRT green and amber palettes, scanlines, ball trails), and the <em>All-in-One</em> bundle:
+      </p>
+      <ul>
+        <li><strong>Transaction Provider:</strong> All transactions are processed through Google Play or Apple App Store payment systems via RevenueCat. Payment terms, currencies, and billing are governed by the respective store's terms of service.</li>
+        <li><strong>Nature of Virtual Goods:</strong> Purchases grant you a personal, non-commercial, revocable license to access the corresponding cosmetic palettes, effects, or ad-free perks within the Application. Virtual goods carry no monetary value outside the game and cannot be exchanged for real currency.</li>
+        <li><strong>Refunds:</strong> Refund requests are governed by the refund policies of Google Play or Apple App Store.</li>
+        <li><strong>Purchase Restoration:</strong> You can restore non-consumable lifetime purchases at any time using the in-game <em>RESTORE PURCHASES</em> button.</li>
+      </ul>
+
+      <h2>4. Advertising & Rewarded Access</h2>
+      <p>
+        Free versions of the Application include third-party advertising via Google AdMob (interstitials and rewarded ads). Rewarded ads grant temporary 24-hour rentals for premium CRT palettes. We do not guarantee uninterrupted availability of third-party advertisements or ad rewards.
+      </p>
+
+      <h2>5. Intellectual Property Rights</h2>
+      <p>
+        All rights, titles, and interests in and to CRT Pong, including but not limited to the source code, game mechanics, visual retro shaders, custom audio synthesis, UI designs, and brand trademarks, are owned exclusively by AieTec or its licensors.
+      </p>
+
+      <h2>6. Disclaimer of Warranties</h2>
+      <p>
+        The Application is provided on an <strong>"AS IS"</strong> and <strong>"AS AVAILABLE"</strong> basis without warranties of any kind, whether express or implied. We do not warrant that real-time multiplayer connections (via WebRTC or Firebase) will be continuous, error-free, latency-free, or compatible with all network environments.
+      </p>
+
+      <h2>7. Limitation of Liability</h2>
+      <p>
+        To the maximum extent permitted by applicable law, AieTec shall not be liable for any indirect, incidental, consequential, special, or punitive damages resulting from your access to or inability to use the Application, server downtime, matchmaking latency, or loss of game data.
+      </p>
+
+      <h2>8. Account Deletion & Termination</h2>
+      <p>
+        You may cease using the Application at any time by uninstalling it. If you have created a linked account and wish to permanently delete your profile, email, ELO score, and matchmaking records, please refer to our dedicated deletion page:
+      </p>
+      <div class="card">
+        <p><strong>Account & Data Deletion</strong></p>
+        <p style="margin-top: 6px;">
+          Learn how to request immediate and permanent data deletion:
+          <a href="delete-account.html">View Account & Data Deletion &rarr;</a>
+        </p>
+      </div>
+
+      <h2>9. Modifications to Terms</h2>
+      <p>
+        We reserve the right to revise or update these Terms at any time. Continued use of the Application after revisions constitute your acceptance of the updated Terms.
+      </p>
+
+      <h2>10. Contact Us</h2>
+      <p>
+        If you have any questions or feedback regarding these Terms, please contact AieTec at: <a href="mailto:contact@aietec.net">contact@aietec.net</a>.
+      </p>
+    </main>
+
+    <footer class="footer">
+      <span>&copy; AieTec. CRT Pong - 1972 Retro Arcade. All rights reserved.</span>
+      <div>
+        <a href="privacy.html" style="margin-right: 12px;">Privacy Policy</a>
+        <a href="delete-account.html">Delete Account</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
