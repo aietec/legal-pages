@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portail Légal et Confidentialité — Prix des Carburants</title>
+  <meta name="description" content="Portail des informations légales, politique de confidentialité et conditions d'utilisation de l'application Prix des Carburants Fuel.">
+  <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    .portal-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+      margin: 2rem 0;
+    }
+    .portal-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+    .portal-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--accent);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2);
+    }
+    .portal-card h2 {
+      font-size: 1.25rem;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      color: var(--text-heading);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .portal-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin: 0 0 1rem 0;
+      flex-grow: 1;
+    }
+    .portal-card .card-link {
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="index.html">⛽ Prix des Carburants</a>
+    <nav aria-label="Navigation principale">
+      <a href="privacy.html">Confidentialité</a>
+      <a href="terms.html">Conditions d'Utilisation</a>
+      <a href="legal.html">Mentions Légales</a>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h1>Centre de Transparence & Légalité</h1>
+      <p class="updated">Application Android Prix des Carburants (net.aietec.fuel)</p>
+
+      <p>
+        Bienvenue sur l'espace d'information légale de l'application <strong>Prix des Carburants</strong> éditée par AieTec. Vous y trouverez l'ensemble des documents régissant l'utilisation de nos services, le traitement de vos données personnelles ainsi que nos mentions légales.
+      </p>
+
+      <div class="portal-grid">
+        <a href="privacy.html" class="portal-card">
+          <div>
+            <h2>🔒 Confidentialité</h2>
+            <p>Protection des données, géolocalisation, gestion du consentement publicitaire Google UMP et exercice de vos droits RGPD.</p>
+          </div>
+          <span class="card-link">Consulter la politique &rarr;</span>
+        </a>
+
+        <a href="terms.html" class="portal-card">
+          <div>
+            <h2>📜 Conditions (CGU)</h2>
+            <p>Règles d'utilisation du service, exactitude des prix officiels, calcul du coût réel avec détour et limitation de responsabilité.</p>
+          </div>
+          <span class="card-link">Lire les conditions &rarr;</span>
+        </a>
+
+        <a href="legal.html" class="portal-card">
+          <div>
+            <h2>⚖️ Mentions Légales</h2>
+            <p>Identité de l'éditeur AieTec, coordonnées de contact, hébergement et licences des données ouvertes OpenData.</p>
+          </div>
+          <span class="card-link">Voir les mentions &rarr;</span>
+        </a>
+      </div>
+
+      <section>
+        <h2>Gestion de votre consentement publicitaire dans l'application</h2>
+        <p>
+          Si vous souhaitez modifier vos choix relatifs aux cookies et à la personnalisation des annonces Google AdMob, vous pouvez le faire à tout moment directement depuis l'application :
+        </p>
+        <ol>
+          <li>Ouvrez l'application <strong>Prix des Carburants</strong> sur votre téléphone.</li>
+          <li>Appuyez sur l'icône <strong>Paramètres</strong> (engrenage en haut à droite).</li>
+          <li>Dans la section <em>Confidentialité & Légalité</em>, touchez <strong>« Gérer mes choix de consentement (UMP) »</strong>.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>
+          Une question, une suggestion ou une réclamation ? Notre équipe est à votre écoute par e-mail : <a href="mailto:contact@aietec.net">contact@aietec.net</a>.
+        </p>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>Application <strong>Prix des Carburants</strong> pour Android (net.aietec.fuel).</p>
+    <p>&copy; 2026 AieTec. Tous droits réservés. <a href="privacy.html">Confidentialité</a> &bull; <a href="terms.html">Conditions d'utilisation</a> &bull; <a href="legal.html">Mentions légales</a></p>
+  </footer>
+</body>
+</html>
