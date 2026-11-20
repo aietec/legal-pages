@@ -19,16 +19,17 @@
   <main>
     <article>
       <h1>Politique de confidentialité</h1>
-      <p class="updated">Service : ScanImmo &bull; Mis à jour : 19 novembre 2026</p>
+      <p class="updated">Service : ScanImmo &bull; Mis à jour : 20 novembre 2026</p>
 
       <p>La présente politique explique comment <strong>AIETEC</strong> collecte et protège vos données personnelles lors de l'utilisation du service <strong>ScanImmo</strong>, conformément au Règlement Général sur la Protection des Données (RGPD).</p>
 
       <section>
         <h2>1. Données collectées</h2>
         <ul>
-          <li><strong>Données de compte :</strong> adresse e-mail professionnelle et mot de passe chiffré (hachage bcrypt), solde de crédits et statut d'abonnement.</li>
+          <li><strong>Données de compte :</strong> adresse e-mail professionnelle et mot de passe protégé par un hachage salé (PBKDF2-SHA256, jamais stocké en clair), solde de crédits, statut d'abonnement, ainsi que la date et la version des CGU/CGV acceptées lors de l'inscription (preuve de votre consentement).</li>
           <li><strong>Historique d'utilisation :</strong> adresses analysées, identifiants BAN / numéros DPE associés et horodatage de génération des rapports.</li>
           <li><strong>Profil Marque Blanche (Plan Agence Pro) :</strong> nom d'agence, couleur principale et logo importé pour personnaliser vos rapports PDF.</li>
+          <li><strong>Position (facultative) :</strong> si vous utilisez la fonction « Ma position GPS », vos coordonnées sont utilisées uniquement pour identifier l'adresse recherchée ; elles ne sont pas rattachées durablement à votre compte en dehors de l'historique de vos rapports.</li>
           <li><strong>Données de paiement :</strong> les paiements par carte bancaire sont traités directement par <strong>Stripe</strong>. ScanImmo ne stocke jamais vos numéros de carte bancaire.</li>
         </ul>
       </section>
@@ -46,17 +47,33 @@
       <section>
         <h2>3. Hébergement, cache technique et sous-traitants</h2>
         <p>L'application et les bases de données associées sont hébergées sur un serveur situé au sein de l'<strong>Union européenne</strong>. Pour optimiser les performances, un cache technique temporaire (Redis, durée de 7 à 30 jours) stocke uniquement des données publiques ouvertes par coordonnées ou identifiant parcellaire, sans aucune donnée personnelle nominative.</p>
-        <p>AIETEC ne vend ni ne loue aucune donnée personnelle. Seul notre prestataire de paiement <strong>Stripe, Inc.</strong> intervient dans le traitement des transactions financières, conformément aux garanties du RGPD.</p>
+        <p>AIETEC ne vend ni ne loue aucune donnée personnelle. Nous faisons appel aux sous-traitants suivants, dans la seule mesure nécessaire au service :</p>
+        <ul>
+          <li><strong>Stripe, Inc.</strong> : traitement des paiements et gestion des abonnements.</li>
+          <li><strong>Prestataire d'envoi d'e-mails</strong> (serveur SMTP) : confirmation d'adresse e-mail et réinitialisation du mot de passe.</li>
+          <li><strong>Sentry</strong> (le cas échéant, si la supervision d'erreurs est activée) : diagnostic technique des erreurs, sans contenu de vos rapports.</li>
+          <li><strong>API publiques et Overpass (OpenStreetMap)</strong> : l'adresse ou les coordonnées recherchées leur sont transmises pour constituer le rapport, sans votre identité ni votre adresse e-mail.</li>
+        </ul>
+        <p>Certains de ces prestataires peuvent traiter des données hors de l'Union européenne ; ces transferts reposent sur les garanties prévues par le RGPD (notamment les clauses contractuelles types).</p>
+        <h3>Session et cookies</h3>
+        <p>ScanImmo n'utilise <strong>aucun cookie de suivi ni outil de mesure d'audience publicitaire</strong>. Un jeton de session est conservé de façon sécurisée sur votre appareil (stockage sécurisé du système sur mobile, stockage du navigateur sur le Web). Les sessions sont courtes (30 minutes, renouvelées automatiquement jusqu'à 30 jours) et sont révoquées lors d'un changement ou d'une réinitialisation de mot de passe.</p>
       </section>
 
       <section>
         <h2>4. Durée de conservation</h2>
-        <p>Les données de compte, logos Marque Blanche et historiques de rapports sont conservés tant que votre compte reste actif, puis supprimés dans un délai maximum de 30 jours suivant votre demande de suppression (hors obligations comptables légales liées aux factures).</p>
+        <ul>
+          <li><strong>Compte et logo Marque Blanche :</strong> conservés tant que votre compte est actif, supprimés immédiatement lorsque vous supprimez votre compte.</li>
+          <li><strong>Historique des rapports :</strong> 12 mois, puis suppression automatique.</li>
+          <li><strong>Comptes dont l'adresse e-mail n'a jamais été confirmée :</strong> supprimés au bout de 30 jours.</li>
+          <li><strong>Transactions et facturation :</strong> conservées 10 ans (obligation comptable). À la suppression de votre compte, elles sont dissociées de votre identité.</li>
+          <li><strong>Journaux techniques :</strong> conservés 30 jours, à des fins de sécurité et de diagnostic.</li>
+        </ul>
       </section>
 
       <section>
         <h2>5. Vos droits (RGPD)</h2>
-        <p>Vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation et de portabilité de vos données personnelles. Pour exercer ces droits, écrivez à : <a href="mailto:contact@aietec.net">contact@aietec.net</a>.</p>
+        <p>Vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation et de portabilité de vos données personnelles. Vous pouvez en exercer deux directement dans l'application, depuis l'onglet <em>Portefeuille › Mes données &amp; mon compte</em> : l'<strong>export de vos données</strong> (fichier JSON) et la <strong>suppression de votre compte</strong>. Pour tout autre droit ou toute question, écrivez à : <a href="mailto:contact@aietec.net">contact@aietec.net</a>.</p>
+        <p>Vous disposez également du droit d'introduire une réclamation auprès de la <strong>CNIL</strong> (<a href="https://www.cnil.fr" target="_blank" rel="noopener">www.cnil.fr</a>).</p>
       </section>
     </article>
   </main>
